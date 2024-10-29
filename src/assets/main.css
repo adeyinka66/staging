@@ -1,0 +1,30 @@
+@import './base.css';
+
+.color1 {
+    color: #A0F111;
+}
+.color2 {
+   color: #28EF0D
+}
+.colBlack {
+   color: #000;
+}
+.colWhite {
+    color: #fff;
+}
+.maTop {
+    margin: 3% 0;
+}
+
+.anybody-family{
+    font-family: "Manrope", sans-serif;
+}
+.cardsBg {
+    background-color: rgb(69, 8, 141, 0.2) !important;
+}
+.btnBackground {
+    background: linear-gradient(45deg, #fff,  #fff, #D9FF83, #21FF00) !important;
+    color: black;
+    font-weight: bold !important;
+}
+
