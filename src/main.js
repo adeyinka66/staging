@@ -20,10 +20,16 @@ const vuetify = createVuetify({
 })
 
 
+//antd
+import { DatePicker } from 'ant-design-vue';
+import { Popover } from 'ant-design-vue';
+import { Drawer } from 'ant-design-vue';
+
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
 app.use(vuetify)
+app.use(Drawer)
 
 app.mount('#app')
