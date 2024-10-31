@@ -1,10 +1,10 @@
 <template>
 <div class="navContainer d-flex justify-space-between align-center ">
-  <div> App Logo</div>
+  <div><img :src="logoWhite" alt="App Logo" srcset=""></div>
   <div class=" d-flex justify-space-between align-center navLinkContainer">
-    <div> Home </div>
-    <div> About </div>
-    <div> App </div>
+    <div class="text-white"> Home </div>
+    <div class="text-white"> About </div>
+    <div class="text-white"> App </div>
   </div>
   <div>  <v-btn border   style="background-color: #330E5B;color: white" variant="flat" >support</v-btn>   </div>
 
@@ -17,18 +17,18 @@
         :open="open"
         @close="onClose"
         class="elevation-10 "
-        style="background: linear-gradient(180deg, #1C0A30 9.5%, rgba(82, 183, 136, 0.75) 31%, #230B3E 57%, #1C0A30 78%, #000 100%) !important; "
+        style="background: linear-gradient(180deg, #1b0b31 9.5%, rgb(69,8,141) 31%, rgb(47,14,87) 57%, #45088d 78%, #000 100%) !important;color: white !important; "
     >
 
       <template #extra>
-        <div class="navLogo"><img src="" alt="app logo" width="100px" height="40px" srcset="" ></div>
+        <div class="navLogo"><img :src="logoWhite" alt="app logo" width="100px" height="40px" srcset="" ></div>
       </template>
 
 
       <div class="d-flex justify-center align-start ga-8 flex-column navDrawer">
-        <span><router-link to="" class="inria-sans-regular  text-white">Home</router-link></span>
-        <span><router-link to="" class="inria-sans-regular text-white" >App</router-link></span>
-        <span> <router-link to="" class="inria-sans-regular text-white" >About</router-link> </span>
+        <span><router-link to="" class="inria-sans-regular  text-white" style="font-weight: 700">Home</router-link></span>
+        <span><router-link to="" class="inria-sans-regular text-white"  style="font-weight: 700">App</router-link></span>
+        <span> <router-link to="" class="inria-sans-regular text-white"  style="font-weight: 700">About</router-link> </span>
       </div>
     </a-drawer>
   </div>
@@ -38,8 +38,10 @@
 
 <script setup>
 import { ref } from 'vue'
+import logoWhite from "../assets/img/logowhite.png"
 const  open = ref(false)
 const placement = ref("right")
+
 const showDrawer = () => {
   open.value = true;
 };
@@ -78,6 +80,11 @@ const onClose = () => {
   }
   .navLinkContainer {
     display: none !important;
+  }
+}
+@media screen and (max-width: 568px) {
+  .navContainer {
+    padding: 10px !important;
   }
 }
 </style>

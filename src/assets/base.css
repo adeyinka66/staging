@@ -14,4 +14,5 @@ body {
   text-size-adjust: none;
   appearance: none;
   -webkit-appearance: none;
+  font-family: "Manrope", sans-serif !important;
 }

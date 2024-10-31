@@ -15,6 +15,12 @@
 .maTop {
     margin: 3% 0;
 }
+.slideSize {
+    width: 500px;
+}
+.gpad {
+    padding: 5px;
+}
 
 .anybody-family{
     font-family: "Manrope", sans-serif;
@@ -28,3 +34,13 @@
     font-weight: bold !important;
 }
 
+@media screen and (max-width: 1000px) {
+    .slideSize {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .slideSize {
+        width: 350px;
+    }
+}
