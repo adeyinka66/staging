@@ -1,5 +1,22 @@
 @import './base.css';
 
+@font-face {
+    font-family: 'biennale-black';
+    src: url("../assets/Fonts/Fontspring-DEMO-biennale-black.otf");
+}
+@font-face {
+    font-family: 'biennale-bold';
+    src: url("../assets/Fonts/Fontspring-DEMO-biennale-bold.otf");
+}
+@font-face {
+    font-family: 'biennale-regular';
+    src: url("../assets/Fonts/Fontspring-DEMO-biennale-regular.otf");
+}
+
+.maTop80 {
+    margin-top: 80px;
+}
+
 .color1 {
     color: #A0F111;
 }

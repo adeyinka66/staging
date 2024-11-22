@@ -1,12 +1,12 @@
 <template>
 <div class="navContainer d-flex justify-space-between align-center ">
-  <div><img :src="logoWhite" alt="App Logo" srcset=""></div>
+  <div><img :src="logomain" alt="App Logo" srcset=""></div>
   <div class=" d-flex justify-space-between align-center navLinkContainer">
     <div class="text-white"> Home </div>
     <div class="text-white"> About </div>
     <div class="text-white"> App </div>
   </div>
-  <div>  <v-btn border   style="background-color: #330E5B;color: white" variant="flat" >support</v-btn>   </div>
+  <div>  <v-btn border   class="supportBtn" variant="flat" >support</v-btn>   </div>
 
   <div class="text-white dnone" @click="showDrawer" > <span  class="mdi mdi-menu"></span> </div>
 </div>
@@ -39,6 +39,7 @@
 <script setup>
 import { ref } from 'vue'
 import logoWhite from "../assets/img/logowhite.png"
+import logomain from "../assets/img/logomain.png"
 const  open = ref(false)
 const placement = ref("right")
 
@@ -59,15 +60,33 @@ const onClose = () => {
 <style scoped lang="scss">
 .navContainer {
   width: 100%;
-  padding: 20px 40px;
   color: #fff !important;
+  border: 1px solid green;
+  display: inline-flex;
+  padding: 0 75px 0 32px;
+  align-items: center;
+  gap: 359px;
   .navLinkContainer {
-    width: 15%;
-    //border: 1px solid orange;
+    width: auto;
+    border: 1px solid orange;
+    gap: 27px !important;
+    font-family: biennale-bold;
     div {
       padding: 0 5px;
       cursor: pointer;
     }
+  }
+  .supportBtn {
+    display: flex;
+    padding: 11px 27px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 17px;
+    background: #330F59;
+    color: #fff;
+    font-family: biennale-bold;
+    text-transform: capitalize;
   }
   .dnone {
     display: none;

@@ -1,12 +1,15 @@
 <template>
   <div  class="landingContainer">
-    <nav-component></nav-component>
+    <div class="maTop80">
+      <nav-component></nav-component>
+    </div>
+
 
     <div class="d-flex justify-space-between align-center landingContentWrapper " >
         <div  class="landingContent1">
-       <p class="unleash">Unleash Big Win <span class="color1">!</span></p>
+       <p class="unleash">Unleash Big Win <span class="color1" style="font-family: 'Bodoni MT Condensed' ">!</span></p>
           <div class="betPlay">
-            Bet, Play, and <span class="dominate" >Dominate Now,</span> anytime, anywhere
+            Bet, Play, <br> and <span class="dominate" >Dominate Now,</span> anytime, anywhere
           </div>
           <p class="pickYourStar">Pick your  <span class="color2">lucky star</span> and win big every 30 minutes bet smart score fast cash out instantly, chase jackpot and <span class="color2">win daily</span>    </p>
           <div>
@@ -333,28 +336,40 @@ const  socialReview = ref([
 
 <style lang="scss" scoped>
 .landingContainer {
-  height: auto;
+  height: 774px;
   background-color: #1C0A30;
   font-family: "Anybody", sans-serif;
+  background-image: url("../assets/img/page1bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid red;
   .landingContentWrapper {
-    padding: 4% 0;
-    //border: 1px solid green;
-    padding: 40px 40px;
+    //padding: 4% 0;
+    border: 1px solid mediumvioletred;
+    //padding: 40px 40px;
+    margin: 0 34px 0 75px;
     .landingContent1 {
       width: 50%;
       //border: 1px solid blue;
      .unleash {
-       color: #fff;
+       color: #FFF;
+       font-family: "biennale-black";
        font-size: 24px;
+       font-style: normal;
+       font-weight: 900;
+       line-height: 50px; /* 208.333% */
      }
       .betPlay {
-        color: #fff;
-        font-size: 64px;
-        width: 90%;
-        //border: 1px solid darkcyan;
-        font-family: "Manrope", sans-serif;
-        line-height: 60px;
-        font-weight: bold;
+        color: #FFF;
+        font-family: "biennale-black";
+        font-size: 62px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 55px; /* 85.938% */
+        border: 1px solid orange;
+        height: auto;
+        width: 70%;
         .dominate {
           background: linear-gradient(45deg,#fff, #1EE500, #fff, #30FF11);
           -webkit-background-clip: text;
@@ -364,17 +379,20 @@ const  socialReview = ref([
         }
       }
       .pickYourStar {
-        margin: 2% 0;
+        margin: 1% 0;
         color: #fff;
-        width: 95%;
-        font-family: "Manrope", sans-serif;
+        font-family: "biennale-regular";
         font-size: 16px;
-        font-weight: 100;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 125% */
+        text-transform: capitalize;
+        width: 78%;
       }
     }
     .landingContent2 {
       width:  50%;
-      //border:  1px solid pink;
+      border:  1px solid pink;
     }
   }
 }
@@ -535,7 +553,7 @@ const  socialReview = ref([
         margin: 3% 0;
       }
       .pickYourStar {
-        margin: 3% 0;
+        margin: 1% 0 16px 0;
       }
     }
     .landingContent2 {
