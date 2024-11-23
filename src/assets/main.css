@@ -12,16 +12,39 @@
     font-family: 'biennale-regular';
     src: url("../assets/Fonts/Fontspring-DEMO-biennale-regular.otf");
 }
+@font-face {
+    font-family: 'biennale-medium';
+    src: url("../assets/Fonts/Fontspring-DEMO-biennale-medium.otf");
+}
+@font-face {
+    font-family: 'biennale-thin';
+    src: url("../assets/Fonts/Fontspring-DEMO-biennale-thin.otf");
+}
+@font-face {
+    font-family: 'biennale-light';
+    src: url("../assets/Fonts/Fontspring-DEMO-biennale-light.otf");
+}
+@font-face {
+    font-family: 'biennale-semibold';
+    src: url("../assets/Fonts/Fontspring-DEMO-biennale-semibold.otf");
+}
+
 
 .maTop80 {
     margin-top: 80px;
 }
+.maTop43 {
+    margin-top: 43px;
+}
 
 .color1 {
-    color: #A0F111;
+    color: #22FF01;
 }
 .color2 {
    color: #28EF0D
+}
+.color3 {
+    color:#21FF00;
 }
 .colBlack {
    color: #000;
@@ -33,7 +56,10 @@
     margin: 3% 0;
 }
 .slideSize {
-    width: 500px;
+    width: 640px;
+    height: 552px;
+
+    border: 1px solid #fff;
 }
 .gpad {
     padding: 5px;
@@ -46,7 +72,7 @@
     background-color: rgb(69, 8, 141, 0.2) !important;
 }
 .btnBackground {
-    background: linear-gradient(45deg, #fff,  #fff, #D9FF83, #21FF00) !important;
+    background: linear-gradient(  120deg, #fff,  #fff, #D9FF83, #21FF00, #21FF00) !important;
     color: black;
     font-weight: bold !important;
 }

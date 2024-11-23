@@ -10,9 +10,11 @@ img,video, embed {
   max-width: 100%;
 }
 
-body {
+html,body {
   text-size-adjust: none;
+  -webkit-text-size-adjust: none;
   appearance: none;
   -webkit-appearance: none;
-  font-family: "Manrope", sans-serif !important;
+  user-select: none;
+  -webkit-user-select: none;
 }
