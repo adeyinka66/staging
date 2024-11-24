@@ -44,10 +44,10 @@
                 </v-card-title>
               </v-card-item>
                 <div class="d-flex justify-space-between align-center" >
-                  <div style="width: 400px;border: 1px solid red">
-                    <v-card-title class="text-capitalize text-left makeYour" style="font-size: 25px" >Make your prediction</v-card-title>
+                  <div style="width: 65%;border: 1px solid red" class="cardBg1Content1">
+                    <v-card-title class="text-capitalize text-left makeYour no-truncate" style="font-size: 25px" >Make your prediction</v-card-title>
                     <v-card-subtitle class="text-capitalize  text-left font-weight-light chooseStar">
-                      <p class="text-white text-left">Choose a star between  <span class="color3" >1</span>  and <span class="color3" >5</span> for every 30</p>
+                      <p class="text-white text-left no-truncate">Choose a star between  <span class="color3" >1</span>  and <span class="color3" >5</span> for every 30</p>
                       <p class="text-white text-left">minutes between 9am to 9 pm.</p>
                     </v-card-subtitle>
                     <v-card-text  class="d-flex justify-space-between align-center">
@@ -64,7 +64,7 @@
 
                     </v-card-text>
                   </div>
-                  <div style="width: 235px;border: 1px solid green">
+                  <div style="width: 35%;border: 1px solid green" class="noContent">
                     <img :src="phone2" alt="" srcset=""  style="width: 100%;">
                   </div>
                 </div>
@@ -79,14 +79,14 @@
                   <v-btn color="#1C0A30" rounded variant="outlined"  > step 2</v-btn>
                   <img :src="gcash" alt="gcash" srcset="" width="60px" height="60px">
                 </v-card-title>
-                <v-card-title class="text-capitalize  text-left earn" style="font-weight: 900;font-size: 22px" >Earn when you win</v-card-title>
-                <v-card-subtitle class="text-capitalize text-left receive">
+                <v-card-title class="text-capitalize  text-left earn no-truncate"  >Earn when you win</v-card-title>
+                <v-card-subtitle class="text-capitalize text-left receive no-truncate">
                   <p>Receive a compounding cash amount for each </p>
                   <p>correct prediction you make.</p>
                 </v-card-subtitle>
               </v-card-item>
               <v-card-text  class="d-flex justify-space-between align-center" >
-                <div class="">
+                <div class="cardBg2Content1" style="width: 75%; border: 1px solid orangered;">
                   <div class="text-left eachPrediction" >
                     Each correct prediction doubles your winning amount.
                   </div>
@@ -103,7 +103,7 @@
                     <div class="twoStar">If you Are two stars away from the correct prediction, you get 50% of your bet back.</div>
                   </div>
                 </div>
-                <div style="border: 1px solid cadetblue">
+                <div style=" width: 25%; border: 1px solid darkblue" class="noContent">
                   <img :src="phone3" alt="" srcset="">
                 </div>
 
@@ -121,8 +121,8 @@
                     <img :src="bankimg" alt="bankImg" srcset="">
                   </div>
                 </v-card-title>
-                <v-card-title class="text-capitalize text-left  winnings " style="font-weight: bolder;font-size: 24px"  >Withdraw your winnings</v-card-title>
-                <v-card-subtitle class="text-capitalize text-left font-weight-light">
+                <v-card-title class="text-capitalize text-left  winnings no-truncate"   >Withdraw your winnings</v-card-title>
+                <v-card-subtitle class="text-capitalize text-left font-weight-light no-truncate">
                   <p class="text-left receiveWinning">Receive your winnings as cash when you </p>
                   <p class="text-left receiveWinning">withdraw it into your bank account</p>
                 </v-card-subtitle>
@@ -130,7 +130,7 @@
               <v-card-text  class="">
                <div  class="step3Background  ">
                  <img :src="transparentIcon" alt="" class="transimg2" srcset="" width="220px" height="200px">
-                 <div class="laptopMan">
+                 <div class="laptopMan noContent">
                    <img :src="laptopman" alt="" srcset="">
                  </div>
                  <div class=" logo"><img :src="logoblack" alt="" srcset="" ></div>
@@ -168,7 +168,7 @@
   <div class="text-center  testimonial">TESTIMONIAL FROM OUR PLAYERS</div>
     <div class="d-flex justify-space-between align-start  section2sides" >
       <div class="d-flex justify-space-between flex-wrap align-center section2content1 " style=" width: 60%" >
-     <div class="d-flex w-100 flex-wrap justify-space-between align-center">
+     <div class="d-flex w-100 flex-wrap ga-2 justify-space-between align-center">
       <v-card   v-for="item in cards"  :key="item.id" :width="item.width"  variant="outlined" class="cardsBg " >
         <v-card-item>
           <v-card-title>
@@ -197,7 +197,7 @@
   <div class="section3"  >
     <div class="section3Bg  ">
       <img :src="transparentIcon" alt="" srcset="" class="section3TransBg">
-      <img :src="manPhone" alt="" sizes="" width="350px" height="380px" srcset="" class="align-self-end section3man">
+      <img :src="manPhone" alt="" sizes="" width="350px" height="380px" srcset=""  class="align-self-end section3man none">
       <div  class="section3Bg1">
         <img :src="logoblack" alt="" srcset="" class="section3Logo">
         <div class="downloadNow" >Download Now </div>
@@ -240,7 +240,7 @@
   <div class="section5" >
     <div class="text-center section5HeaderText" style="font-size: 48px"> Connect <span class="color2">With</span>  US </div>
     <div class="d-flex justify-space-between align-start mt-16 section5ContentWrapper" >
-      <div style=" " class="section5content1" >
+      <div style="  " class="section5content1" >
         <div>
           <label class="mailLabel">Enter Your Mail</label>
           <div>
@@ -260,23 +260,24 @@
         <div class="d-flex justify-space-between align-center section5FooterContent" >
           <div style="width: 65%; ">
             <div class="d-flex justify-start align-center ga-2 text-white" >
-              <v-icon  size="20" icon="mdi mdi-instagram"></v-icon>
+              <v-icon  size="20" icon="mdi mdi-instagram"> </v-icon>
               <v-icon size="20" icon="mdi mdi-twitter"></v-icon>
               <v-icon size="20" icon="mdi mdi-facebook"></v-icon>
+
             </div>
             <div class="">
-              <img :src="logotrans" alt="logo white" srcset="" >
+              <img :src="logotrans" alt="logo white" srcset="" class="logotrans" >
               <p class="opacity-70 sh">@starHunt</p>
             </div>
 <div class="customerStar"> custumer@starHunt.com  </div>
           </div>
-          <img :src="whatsapp" alt="" srcset=""   >
+          <img :src="whatsapp" alt="" srcset="" class="barcode"  >
         </div>
 
       </div>
 
-      <div style="width: 50%; border: 1px solid purple " class="text-right section5content2">
-        <img :src="map" alt="" srcset=""  class="" >
+      <div style="width: 50%; border: 1px solid red " class="text-right section5content2">
+        <img :src="map" alt="" srcset=""  class="map" >
       </div>
     </div>
   </div>
@@ -338,6 +339,10 @@ const breakpoints = ref(  {
   },
   900: {
     itemsToShow: 1.7,
+    snapAlign: 'center',
+  },
+  1500: {
+    itemsToShow: 2.5,
     snapAlign: 'center',
   },
 
@@ -449,7 +454,7 @@ const  socialReview = ref([
     border:1px solid gold;
     .cardBg1 {
       background: #1C0A30;
-      padding: 38px;
+      padding: 38px 10px;
       border-radius: 24px;
       border: 1px solid #FFF;
       box-shadow: 341px 174px 107px 0px rgba(107, 90, 124, 0.00), 218px 111px 98px 0px rgba(107, 90, 124, 0.01), 123px 62px 83px 0px rgba(107, 90, 124, 0.05), 55px 28px 61px 0px rgba(107, 90, 124, 0.09), 14px 7px 34px 0px rgba(107, 90, 124, 0.10);
@@ -461,7 +466,7 @@ const  socialReview = ref([
       .makeYour {
         color: #FFF;
         font-family: "biennale-black";
-        font-size: 40px;
+        font-size: 25px;
         font-style: normal;
         font-weight: 900;
         line-height: 20px; /* 50% */
@@ -514,9 +519,9 @@ const  socialReview = ref([
       }
     }
     .cardBg2 {
-      height: 652px !important;
+      height: auto !important;
       position: relative;
-      padding: 38px;
+      padding: 38px 10px;
       border-radius: 24px;
       background: #21FF00;
       box-shadow: 341px 174px 107px 0px rgba(107, 90, 124, 0.00), 218px 111px 98px 0px rgba(107, 90, 124, 0.01), 123px 62px 83px 0px rgba(107, 90, 124, 0.05), 55px 28px 61px 0px rgba(107, 90, 124, 0.09), 14px 7px 34px 0px rgba(107, 90, 124, 0.10);
@@ -528,20 +533,20 @@ const  socialReview = ref([
       .earn {
         color: #1C0A30;
         font-family: "biennale-black";
-        font-size: 40px;
+        font-size: 25px;
         font-style: normal;
         font-weight: 900;
         line-height: 20px; /* 50% */
         text-transform: capitalize;
-        margin: 18px 2px  0;
+        margin: 20px 2px  0;
       }
       .receive {
         color: #29183C;
         font-family: "biennale-regular";
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 16px; /* 100% */
+        line-height: 18px; /* 100% */
         text-transform: capitalize;
       }
       .eachPrediction {
@@ -564,13 +569,13 @@ const  socialReview = ref([
       }
       .multiplePrediction {
         display: flex;
-        width: 374px;
+        width: 100%;
         padding: 12px 18px;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
         border-radius: 7px;
-        border: 1px solid #1C0A30;
+        border: 1px solid black;
         color: #1C0A30;
         font-family: "biennale-regular";
         font-size: 14px;
@@ -578,14 +583,14 @@ const  socialReview = ref([
         font-weight: 400;
         line-height: 15px; /* 107.143% */
         text-transform: capitalize;
-        margin: 23px 0 23px 0;
+        margin: 23px 0 13px 0;
         .betPrediction {
           display: flex;
+          width: 80%;
           padding: 6px 18px;
           flex-direction: column;
           align-items: flex-start;
           gap: 10px;
-          align-self: stretch;
           border-radius: 7px;
           border: 1px solid #A1FF00;
           background: rgba(161, 255, 0, 0.60);
@@ -596,12 +601,13 @@ const  socialReview = ref([
           font-weight: 400;
           line-height: 20px; /* 181.818% */
           text-transform: capitalize;
-          margin: 10px 0 0 0;
+          margin: 5px 0 0 0;
         }
       }
       .neverLoose {
         display: flex;
-        width: 374px;
+        //width: 374px;
+        width: 100%;
         padding: 12px 18px;
         flex-direction: column;
         align-items: flex-start;
@@ -620,7 +626,6 @@ const  socialReview = ref([
           padding: 9px 0px 9px 18px;
           align-items: center;
           gap: 10px;
-          align-self: stretch;
           border-radius: 7px;
           border: 1px solid #FFF;
           background: rgba(161, 255, 0, 0.60);
@@ -638,7 +643,9 @@ const  socialReview = ref([
           justify-content: center;
           align-items: center;
           gap: 10px;
-          align-self: stretch;
+          border-radius: 7px;
+          border: 1px solid #FFF;
+          background: rgba(161, 255, 0, 0.60);
           color: #1C0A30;
           font-family: "biennale-regular";
           font-size: 11px;
@@ -648,17 +655,16 @@ const  socialReview = ref([
           text-transform: capitalize;
         }
       }
-
     }
     .cardBg3 {
       background: #1C0A30;
-      padding: 38px;
+      padding: 38px 10px;
       border-radius: 24px;
       border: 1px solid #FFF;
       .winnings {
         color: #FFF;
         font-family: "biennale-black";
-        font-size: 40px;
+        font-size: 25px;
         font-style: normal;
         font-weight: 900;
         line-height: 20px; /* 50% */
@@ -676,11 +682,11 @@ const  socialReview = ref([
       }
       .step3Background {
         position: relative;
-        width: 534px;
+        width: 100%;
         height: 272px;
         border-radius: 19px;
         background: #21FF00;
-        margin: 55px 0 0 0;
+        margin: 55px auto 0 auto;
         .logo {
            padding: 12px 0 0 21px;
           text-align: left;
@@ -722,7 +728,7 @@ const  socialReview = ref([
   }
 }
 .section2 {
-  height: 100vh;
+  height: auto;
   background-color: #1C0A30;
   padding: 40px 0;
   position: relative;
@@ -748,7 +754,7 @@ const  socialReview = ref([
     margin: 0 0 50px 0;
   }
   .section2sides {
-    border: 1px solid purple;
+    border: 1px solid gold;
     padding: 0 60px;
     .section2content1 {
       border: 1px solid burlywood;
@@ -831,6 +837,7 @@ const  socialReview = ref([
     background-repeat: no-repeat;
     height: 500px;
     width: 90%;
+    margin: 0 auto !important;
     border-radius: 40px;
     .section3Bg1 {
       width: 100%;
@@ -1014,6 +1021,10 @@ const  socialReview = ref([
         border: 1px solid #FFF;
         background: rgba(217, 217, 217, 0.19);
         backdrop-filter: blur(10px);
+        .logotrans{
+          width: 150px !important;
+          height: 55px !important;
+        }
         .sh {
           color: #FFF;
           font-family: "biennale-regular";
@@ -1024,11 +1035,10 @@ const  socialReview = ref([
         }
         .customerStar {
           width: 254px;
-          display: flex;
-          height: 29px;
-          padding: 0 5px;
-          justify-content: center;
-          align-items: center;
+          //display: flex;
+          padding: 5px 5px;
+          //justify-content: center;
+          //align-items: center;
           border-radius: 2px;
           background: #FFF;
           color: #000;
@@ -1046,6 +1056,94 @@ const  socialReview = ref([
   }
 }
 
+@media screen and (min-width: 1250px) {
+  .landingContainer {
+    .landingContentWrapper {
+      .landingContent2 {
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+    }
+  }
+  .section1 {
+    .carouselContainer {
+      border: 2px solid darkorange;
+      padding: 100px 0;
+    }
+  }
+  .section2 {
+    padding: 200px 0;
+    .section2sides{
+      .section2content2{
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+    }
+  }
+  .section3 {
+    padding: 206px 101px 202px 101px !important;
+    .section3Bg {
+      margin: 0 auto !important;
+    }
+  }
+  .section4 {
+padding: 100px 0;
+  }
+  .section5 {
+    padding: 100px 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section1 {
+    .cardBg1 {
+      .cardBg1Content1 {
+        width: 100% !important;
+      }
+    }
+    .cardBg2 {
+      .cardBg2Content1 {
+        width: 100% !important;
+      }
+    }
+    .cardBg3 {
+      .cardBg3Content1 {
+        width: 100% !important;
+      }
+    }
+   .noContent {
+     display: none !important;
+   }
+  }
+  .section2 {
+  .section2sides {
+    padding: 0 !important;
+    .section2content2 {
+      .socialComments {
+        width: 100%;
+      }
+    }
+  }
+  }
+}
+@media screen and (max-width: 1056px) {
+  .section3 {
+    .none {
+      display: none !important;
+    }
+    .section3TransBg {
+      position: absolute;
+      top: 30px;
+      right: 100px !important;
+      width: 400px !important;
+      height: 380px !important;
+    }
+  }
+}
 @media screen and (max-width: 968px) {
 .section2sides {
   display: flex;
@@ -1053,6 +1151,9 @@ const  socialReview = ref([
   .section2content1 {
     width: 100% !important;
     margin: 2% 0 5% 0 ;
+    .cardsBg {
+      width: 285px !important;
+    }
   }
   .section2content2 {
     width: 100% !important;
@@ -1077,7 +1178,39 @@ const  socialReview = ref([
 }
 
 @media screen and (max-width: 868px) {
+.section2 {
+  .section2sides{
+    padding: 0 30px !important;
+    .section2content1 {
+      .cardsBg {
+        width: 45% !important;
+      }
+    }
+  }
 
+}
+  .section4 {
+    .section4ContentWrapper {
+      margin: 100px 0 0 0 ;
+      border: 1px solid orange;
+      padding: 0 10px 70px 10px !important;
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+    }
+  }
+  .section5 {
+    .section5content1 {
+      .section5FooterContent {
+        margin: 20px 0 0 0 !important;
+        .customerStar {
+          font-size: 16px !important;
+         //justify-content: start !important;
+          width: 80% !important;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1128,18 +1261,167 @@ const  socialReview = ref([
       .section4content1 {
         width: 100% !important;
         margin: 3% 0;
+        .mTicket {
+          justify-content: center !important;
+        }
       }
       .section4content2 {
         width: 100% !important;
         text-align: center !important;
+        border: 1px solid purple;
+        margin: 40px 0 0 0 ;
+      }
+    }
+  }
+  .section5 {
+    .section5ContentWrapper {
+      .section5content1 {
+        .section5FooterContent {
+          padding: 0 15px !important;
+          .customerStar {
+            font-size: 14px !important;
+            width: auto !important;
+          }
+          .barcode {
+            width: 120px !important;
+            height: 150px !important;
+          }
+        }
       }
     }
   }
 }
+
+@media screen and (max-width: 698px) {
+  .landingContainer {
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .landingContentWrapper {
+      display: flex !important;
+      flex-wrap: wrap;
+      .landingContent1 {
+        width: 100% !important;
+        //border: 1px solid red;
+        .unleash {
+          margin: 3% 0;
+        }
+        .pickYourStar {
+          margin: 1% 0 16px 0;
+        }
+      }
+      .landingContent2 {
+        width: 100% !important;
+        //border: 1px solid green;
+      }
+    }
+  }
+  .section3 {
+    padding: 106px 20px 122px 20px !important;
+    .section3Bg {
+      margin: 0 auto !important;
+      .section3Bg1 {
+        position: relative;
+        width: 100% !important;
+        border: 1px solid green;
+        .section3Logo {
+          margin: 45px 0 0 54px;
+        }
+        .section3man {
+          position: absolute;
+        }
+      }
+      .section3Bg2 {
+        display: none !important;
+      }
+    }
+  }
+  .section4 {
+    height: auto !important;
+    padding: 100px 0;
+    .section4ContentWrapper {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      .section4content1 {
+        width: 100% !important;
+        margin: 3% 0;
+        .problem {
+          color: #FFF;
+         text-align: center !important;
+        }
+        .mTicket {
+          justify-content: center !important;
+        }
+      }
+      .section4content2 {
+        width: 100% !important;
+        text-align: center !important;
+        border: 1px solid purple;
+        margin: 40px 0 0 0 ;
+      }
+    }
+  }
+  .section5 {
+    .section5ContentWrapper {
+      flex-wrap: wrap !important;
+      .section5content1 {
+
+        .section5FooterContent {
+          padding: 0 15px !important;
+          .customerStar {
+            font-size: 14px !important;
+            width: auto !important;
+            margin: 15px 0 0 0 !important;
+          }
+          .barcode {
+            width: 120px !important;
+            height: 150px !important;
+          }
+          .logotrans {
+            height: 50px !important;
+            width: 120px !important;
+          }
+        }
+      }
+      .section5content2 {
+        margin: 20px 0 0 0 !important;
+        width: 100% !important;
+        border: 1px solid gold !important;
+        text-align: left !important;
+
+        .map {
+          width: auto !important;
+          margin: 0 auto !important;
+          text-align: left !important;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 568px) {
   .landingContainer {
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     .landingContentWrapper {
-      padding: 10px !important;
+      display: flex !important;
+      flex-wrap: wrap;
+      margin: 0 20px 0 20px !important;
+      .landingContent1 {
+        width: 100% !important;
+        border: 1px solid red !important;
+        .unleash {
+          margin: 3% 0;
+        }
+        .pickYourStar {
+          margin: 1% 0 16px 0;
+        }
+      }
+      .landingContent2 {
+        width: 100% !important;
+        //border: 1px solid green;
+      }
     }
   }
   .section2 {
@@ -1149,24 +1431,214 @@ const  socialReview = ref([
     }
   }
   .section3 {
-    padding: 100px 10px  !important;
+    padding: 106px 20px 122px 20px !important;
+    .section3Bg {
+      margin: 0 auto !important;
+      .section3Bg1 {
+        position: relative;
+        width: 100% !important;
+        border: 1px solid green;
+        .section3Logo {
+          margin: 45px 0 0 54px;
+        }
+        .section3man {
+          position: absolute;
+        }
+      }
+      .section3Bg2 {
+        display: none !important;
+      }
+    }
   }
-  .section4{
-    padding: 100px 10px !important;
+  .section4 {
+    height: auto !important;
+    padding: 100px 0;
+    .section4ContentWrapper {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      .section4content1 {
+        width: 100% !important;
+        margin: 3% 0;
+        .problem {
+          color: #FFF;
+          text-align: center !important;
+        }
+        .assistance {
+          text-align: center !important;
+        }
+        .mTicket {
+          justify-content: center !important;
+        }
+      }
+      .section4content2 {
+        width: 100% !important;
+        text-align: center !important;
+        border: 1px solid purple;
+        margin: 40px 0 0 0 ;
+      }
+    }
   }
   .section5 {
-    padding: 100px 10px !important;
+    padding: 20px !important;
     .section5ContentWrapper {
-      gap: 2px !important;
+      flex-wrap: wrap !important;
       .section5content1 {
-        width: 67% !important;
+
+        .section5FooterContent {
+          padding: 0 15px !important;
+          .customerStar {
+            font-size: 14px !important;
+            width: auto !important;
+            margin: 15px 0 0 0 !important;
+          }
+          .barcode {
+            width: 120px !important;
+            height: 150px !important;
+          }
+          .logotrans {
+            height: 50px !important;
+            width: 120px !important;
+          }
+        }
       }
       .section5content2 {
-        width: 30% !important;
-        img {
-          width: 150px !important;
-          height: 170px !important;
+        margin: 20px 0 0 0 !important;
+        width: 100% !important;
+        border: 1px solid gold !important;
+        text-align: left !important;
 
+        .map {
+          width: auto !important;
+          margin: 0 auto !important;
+          text-align: left !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .landingContainer {
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .landingContentWrapper {
+      display: flex !important;
+      flex-wrap: wrap;
+      margin: 0 20px 0 20px !important;
+      .landingContent1 {
+        width: 100% !important;
+        border: 1px solid red !important;
+        .unleash {
+          margin: 3% 0;
+        }
+        .betPlay {
+          width: 100% !important;
+        }
+        .pickYourStar {
+          margin: 1% 0 16px 0;
+          width: 100% !important;
+        }
+      }
+      .landingContent2 {
+        width: 100% !important;
+        //border: 1px solid green;
+      }
+    }
+  }
+  .section2 {
+    padding: 10px !important;
+    .cardsBg {
+      width: 175px !important;
+    }
+  }
+  .section3 {
+    padding: 106px 10px 122px 10px !important;
+    .section3Bg {
+      .section3Bg1 {
+        .app {
+          width: 80% !important;
+        }
+      }
+    }
+    .section3Bg {
+      margin: 0 auto !important;
+      .section3Bg1 {
+        position: relative;
+        width: 100% !important;
+        border: 1px solid green;
+        .section3Logo {
+          margin: 45px 0 0 54px;
+        }
+        .section3man {
+          position: absolute;
+        }
+      }
+      .section3Bg2 {
+        display: none !important;
+      }
+    }
+  }
+  .section4 {
+    height: auto !important;
+    padding: 100px 0;
+    .section4ContentWrapper {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      .section4content1 {
+        width: 100% !important;
+        margin: 3% 0;
+        .problem {
+          color: #FFF;
+          text-align: center !important;
+        }
+        .assistance {
+          text-align: center !important;
+        }
+        .mTicket {
+          justify-content: center !important;
+        }
+      }
+      .section4content2 {
+        width: 100% !important;
+        text-align: center !important;
+        border: 1px solid purple;
+        margin: 40px 0 0 0 ;
+      }
+    }
+  }
+  .section5 {
+    padding: 20px !important;
+    .section5ContentWrapper {
+      flex-wrap: wrap !important;
+      .section5content1 {
+        .section5FooterContent {
+          padding: 0 15px !important;
+          .customerStar {
+            font-size: 14px !important;
+            width: auto !important;
+            margin: 15px 0 0 0 !important;
+          }
+          .barcode {
+            width: 100px !important;
+            height: 120px !important;
+          }
+          .logotrans {
+            height: 40px !important;
+            width: 100px !important;
+          }
+        }
+      }
+      .section5content2 {
+        margin: 20px 0 0 0 !important;
+        width: 100% !important;
+        border: 1px solid gold !important;
+        text-align: left !important;
+
+        .map {
+          width: auto !important;
+          margin: 0 auto !important;
+          text-align: left !important;
         }
       }
     }

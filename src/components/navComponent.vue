@@ -62,10 +62,9 @@ const onClose = () => {
   width: 100%;
   color: #fff !important;
   border: 1px solid green;
-  display: inline-flex;
+  display: flex;
   padding: 0 75px 0 32px;
   align-items: center;
-  gap: 359px;
   .navLinkContainer {
     width: auto;
     border: 1px solid orange;

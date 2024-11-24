@@ -29,6 +29,11 @@
     src: url("../assets/Fonts/Fontspring-DEMO-biennale-semibold.otf");
 }
 
+.no-truncate {
+    white-space: normal; /* Allows text to wrap instead of truncating */
+    overflow: visible;   /* Removes the truncation effect */
+    text-overflow: unset; /* Unsets the ellipsis */
+}
 
 .maTop80 {
     margin-top: 80px;
@@ -56,8 +61,8 @@
     margin: 3% 0;
 }
 .slideSize {
-    width: 640px;
-    height: 552px;
+    width: 80%;
+    height: 652px;
 
     border: 1px solid #fff;
 }
@@ -79,11 +84,13 @@
 
 @media screen and (max-width: 1000px) {
     .slideSize {
-        width: 400px;
+        width: 80%;
+        height: 652px;
     }
 }
 @media screen and (max-width: 568px) {
     .slideSize {
-        width: 350px;
+        width: 80%;
+        height: 652px;
     }
 }
