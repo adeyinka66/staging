@@ -1,6 +1,6 @@
 <template>
   <div  class="landingContainer">
-    <div class="maTop80">
+    <div class="" style="padding: 80px 0 0 0 ;">
       <nav-component></nav-component>
     </div>
 
@@ -44,7 +44,7 @@
                 </v-card-title>
               </v-card-item>
                 <div class="d-flex justify-space-between align-center" >
-                  <div style="width: 65%;border: 1px solid red" class="cardBg1Content1">
+                  <div style="width: 65%;" class="cardBg1Content1">
                     <v-card-title class="text-capitalize text-left makeYour no-truncate" style="font-size: 25px" >Make your prediction</v-card-title>
                     <v-card-subtitle class="text-capitalize  text-left font-weight-light chooseStar">
                       <p class="text-white text-left no-truncate">Choose a star between  <span class="color3" >1</span>  and <span class="color3" >5</span> for every 30</p>
@@ -64,7 +64,7 @@
 
                     </v-card-text>
                   </div>
-                  <div style="width: 35%;border: 1px solid green" class="noContent">
+                  <div style="width: 35%;" class="noContent">
                     <img :src="phone2" alt="" srcset=""  style="width: 100%;">
                   </div>
                 </div>
@@ -86,7 +86,7 @@
                 </v-card-subtitle>
               </v-card-item>
               <v-card-text  class="d-flex justify-space-between align-center" >
-                <div class="cardBg2Content1" style="width: 75%; border: 1px solid orangered;">
+                <div class="cardBg2Content1" style="width: 75%; ">
                   <div class="text-left eachPrediction" >
                     Each correct prediction doubles your winning amount.
                   </div>
@@ -103,7 +103,7 @@
                     <div class="twoStar">If you Are two stars away from the correct prediction, you get 50% of your bet back.</div>
                   </div>
                 </div>
-                <div style=" width: 25%; border: 1px solid darkblue" class="noContent">
+                <div style=" width: 25%; " class="noContent">
                   <img :src="phone3" alt="" srcset="">
                 </div>
 
@@ -276,7 +276,7 @@
 
       </div>
 
-      <div style="width: 50%; border: 1px solid red " class="text-right section5content2">
+      <div style="width: 50%; " class="text-right section5content2">
         <img :src="map" alt="" srcset=""  class="map" >
       </div>
     </div>
@@ -368,10 +368,10 @@ const  socialReview = ref([
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid red;
+  //border: 1px solid red;
   .landingContentWrapper {
     //padding: 4% 0;
-    border: 1px solid mediumvioletred;
+    //border: 1px solid mediumvioletred;
     //padding: 40px 40px;
     margin: 0 34px 0 75px;
     .landingContent1 {
@@ -392,7 +392,7 @@ const  socialReview = ref([
         font-style: normal;
         font-weight: 900;
         line-height: 55px; /* 85.938% */
-        border: 1px solid orange;
+        //border: 1px solid orange;
         height: auto;
         width:90%;
         .dominate {
@@ -414,7 +414,7 @@ const  socialReview = ref([
         text-transform: capitalize;
         width: 90%;
         opacity: 0.8;
-        border: 1px solid pink;
+        //border: 1px solid pink;
       }
       .btnStyle {
         margin-top: 12px;
@@ -429,7 +429,7 @@ const  socialReview = ref([
     }
     .landingContent2 {
       width:  50%;
-      border:  1px solid pink;
+      //border:  1px solid pink;
     }
   }
 }
@@ -437,7 +437,7 @@ const  socialReview = ref([
   height: auto;
   background-color: #1C0A2F;;
   padding: 20px 0;
-  border: 1px solid mediumaquamarine;
+  //border: 1px solid mediumaquamarine;
   .howTo {
     color: #fff;
     margin: 58px 0 0 0;
@@ -451,7 +451,7 @@ const  socialReview = ref([
   .carouselContainer {
     //padding: 40px 40px;
     margin: 74px 0 0 0;
-    border:1px solid gold;
+    //border:1px solid gold;
     .cardBg1 {
       background: #1C0A30;
       padding: 38px 10px;
@@ -497,7 +497,7 @@ const  socialReview = ref([
         background-color: #230B3E;
         padding: 10px;
         margin: 13px 0  0 0;
-        border: 1px dotted blue;
+        //border: 1px dotted blue;
         .title {
           color: #0FD600;
           font-family: "biennale-black";
@@ -737,7 +737,7 @@ const  socialReview = ref([
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden !important;
-  border: 1px solid yellow;
+  //border: 1px solid yellow;
   //.section2bg {
   //  position: absolute;
   //  top: 25%;
@@ -749,15 +749,15 @@ const  socialReview = ref([
     font-size: 24px;
     font-style: normal;
     font-weight: 900;
-    line-height: 12px; /* 50% */
+    line-height: 24px; /* 50% */
     text-transform: capitalize;
     margin: 0 0 50px 0;
   }
   .section2sides {
-    border: 1px solid gold;
+    //border: 1px solid gold;
     padding: 0 60px;
     .section2content1 {
-      border: 1px solid burlywood;
+      //border: 1px solid burlywood;
       padding: 0;
       margin: 0;
     }
@@ -841,7 +841,7 @@ const  socialReview = ref([
     border-radius: 40px;
     .section3Bg1 {
       width: 100%;
-      border: 1px solid red;
+      //border: 1px solid red;
       .section3Logo {
         margin: 45px 0 0 54px;
       }
@@ -864,7 +864,7 @@ const  socialReview = ref([
         line-height: 25px; /* 125% */
         text-transform: capitalize;
         width: 400px;
-        border: 1px solid darkgoldenrod;
+        //border: 1px solid darkgoldenrod;
         margin: 2px 0 0 54px;
       }
       .section3Btn {
@@ -899,22 +899,22 @@ const  socialReview = ref([
     color: #FFF;
     text-align: center;
     font-family: "biennale-black";
-    font-size: 48px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 900;
-    line-height: 12px; /* 25% */
+    line-height: 40px; /* 25% */
     text-transform: capitalize;
     padding: 57px 0 0 0;
   }
   .section4ContentWrapper {
     margin: 100px 0 0 0 ;
-    border: 1px solid orange;
+    //border: 1px solid orange;
     padding: 0 90px 70px 62px;
     .section4content1 {
       .problem {
         color: #FFF;
         font-family: "biennale-black";
-        font-size: 48px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 900;
         line-height: 55px; /* 114.583% */
@@ -950,19 +950,19 @@ const  socialReview = ref([
     color: #FFF;
     text-align: center;
     font-family: "biennale-black";
-    font-size: 48px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 900;
-    line-height: 12px; /* 25% */
+    line-height: 40px; /* 25% */
     text-transform: capitalize;
     margin: 70px 0 0 0 ;
   }
   .section5ContentWrapper {
-    border: 1px solid blue;
+    //border: 1px solid blue;
     margin: 48px 0 0 0 ;
     .section5content1 {
       width: 563px;
-      border: 1px solid green;
+      //border: 1px solid green;
       .mailLabel {
         color: #FFF;
         font-family: "biennale-black";
@@ -1069,7 +1069,7 @@ const  socialReview = ref([
   }
   .section1 {
     .carouselContainer {
-      border: 2px solid darkorange;
+      //border: 2px solid darkorange;
       padding: 100px 0;
     }
   }
@@ -1192,7 +1192,7 @@ padding: 100px 0;
   .section4 {
     .section4ContentWrapper {
       margin: 100px 0 0 0 ;
-      border: 1px solid orange;
+      //border: 1px solid orange;
       padding: 0 10px 70px 10px !important;
       display: flex !important;
       justify-content: space-between !important;
@@ -1239,7 +1239,7 @@ padding: 100px 0;
       .section3Bg1 {
         position: relative;
         width: 100% !important;
-        border: 1px solid green;
+        //border: 1px solid green;
         .section3Logo {
           margin: 45px 0 0 54px;
         }
@@ -1268,7 +1268,7 @@ padding: 100px 0;
       .section4content2 {
         width: 100% !important;
         text-align: center !important;
-        border: 1px solid purple;
+        //border: 1px solid purple;
         margin: 40px 0 0 0 ;
       }
     }
@@ -1323,7 +1323,7 @@ padding: 100px 0;
       .section3Bg1 {
         position: relative;
         width: 100% !important;
-        border: 1px solid green;
+        //border: 1px solid green;
         .section3Logo {
           margin: 45px 0 0 54px;
         }
@@ -1356,7 +1356,7 @@ padding: 100px 0;
       .section4content2 {
         width: 100% !important;
         text-align: center !important;
-        border: 1px solid purple;
+        //border: 1px solid purple;
         margin: 40px 0 0 0 ;
       }
     }
@@ -1386,7 +1386,7 @@ padding: 100px 0;
       .section5content2 {
         margin: 20px 0 0 0 !important;
         width: 100% !important;
-        border: 1px solid gold !important;
+        //border: 1px solid gold !important;
         text-align: left !important;
 
         .map {
@@ -1410,7 +1410,7 @@ padding: 100px 0;
       margin: 0 20px 0 20px !important;
       .landingContent1 {
         width: 100% !important;
-        border: 1px solid red !important;
+        //border: 1px solid red !important;
         .unleash {
           margin: 3% 0;
         }
@@ -1437,7 +1437,7 @@ padding: 100px 0;
       .section3Bg1 {
         position: relative;
         width: 100% !important;
-        border: 1px solid green;
+        //border: 1px solid green;
         .section3Logo {
           margin: 45px 0 0 54px;
         }
@@ -1473,7 +1473,7 @@ padding: 100px 0;
       .section4content2 {
         width: 100% !important;
         text-align: center !important;
-        border: 1px solid purple;
+        //border: 1px solid purple;
         margin: 40px 0 0 0 ;
       }
     }
@@ -1504,7 +1504,7 @@ padding: 100px 0;
       .section5content2 {
         margin: 20px 0 0 0 !important;
         width: 100% !important;
-        border: 1px solid gold !important;
+        //border: 1px solid gold !important;
         text-align: left !important;
 
         .map {
@@ -1528,7 +1528,7 @@ padding: 100px 0;
       margin: 0 20px 0 20px !important;
       .landingContent1 {
         width: 100% !important;
-        border: 1px solid red !important;
+        //border: 1px solid red !important;
         .unleash {
           margin: 3% 0;
         }
@@ -1566,7 +1566,7 @@ padding: 100px 0;
       .section3Bg1 {
         position: relative;
         width: 100% !important;
-        border: 1px solid green;
+        //border: 1px solid green;
         .section3Logo {
           margin: 45px 0 0 54px;
         }
@@ -1602,7 +1602,7 @@ padding: 100px 0;
       .section4content2 {
         width: 100% !important;
         text-align: center !important;
-        border: 1px solid purple;
+        //border: 1px solid purple;
         margin: 40px 0 0 0 ;
       }
     }
@@ -1632,7 +1632,7 @@ padding: 100px 0;
       .section5content2 {
         margin: 20px 0 0 0 !important;
         width: 100% !important;
-        border: 1px solid gold !important;
+        //border: 1px solid gold !important;
         text-align: left !important;
 
         .map {

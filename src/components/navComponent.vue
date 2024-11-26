@@ -61,13 +61,13 @@ const onClose = () => {
 .navContainer {
   width: 100%;
   color: #fff !important;
-  border: 1px solid green;
+  //border: 1px solid red;
   display: flex;
   padding: 0 75px 0 32px;
   align-items: center;
   .navLinkContainer {
     width: auto;
-    border: 1px solid orange;
+    //border: 1px solid orange;
     gap: 27px !important;
     font-family: biennale-bold;
     div {
